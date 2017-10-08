@@ -1,0 +1,38 @@
+<style>
+sup{
+    position: relative;
+    top: -30%;
+    font-size: 80%;
+}
+</style>
+
+<h2>Problem</h2>
+<p>The sum of the squares of the first ten natural numbers is,<br />
+1<sup>2</sup> + 2<sup>2</sup> + ... + 10<sup>2</sup> = 385<br />
+The square of the sum of the first ten natural numbers is,<br />
+(1 + 2 + ... + 10)<sup>2</sup> = 55<sup>2</sup> = 3025<br />
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.<br />
+Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.</p>
+
+<h2>Answer</h2>
+<span></span>
+
+<script>
+
+//SUM OF THE SQUARES
+var sumOfSquares = 0;
+for(var i = 1; i <= 100; i ++){
+    sumOfSquares += i * i;
+}
+
+//SQUARE OF THE SUMS
+var sums = 0;
+for(var i = 1; i <= 100; i ++){
+    sums += i;
+}
+var squareOfSums = sums * sums;
+
+//Solution goes here
+document.querySelectorAll('span')[0].innerHTML = squareOfSums - sumOfSquares;
+
+</script>

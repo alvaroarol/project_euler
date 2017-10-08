@@ -1,0 +1,30 @@
+<h2>Problem</h2>
+<p>By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.<br />
+What is the 10 001st prime number?</p>
+
+<h2>Answer</h2>
+<span></span>
+
+<script>
+
+var primePosition = 0;
+var currentNumber = 2;
+
+while(primePosition < 10001){
+    var primeBool = true;
+    for(var i = 2; i < currentNumber; i++){
+        if(currentNumber % i === 0){
+            primeBool = false;
+            break;
+        }
+    }
+    if(primeBool){
+        primePosition ++;
+    }
+    currentNumber ++;
+}
+
+//Solution goes here
+document.querySelectorAll('span')[0].innerHTML = 'n° ' + primePosition + ' : ' + (currentNumber - 1);
+
+</script>
