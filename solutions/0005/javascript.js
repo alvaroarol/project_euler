@@ -1,12 +1,3 @@
-<h2>Problem</h2>
-<p>2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.<br />
-What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?</p>
-
-<h2>Answer</h2>
-<span></span>
-
-<script>
-
 var loop = true;
 var number = 1;
 //CHECK EVERY NUMBER UNTIL FIRST ONE IS FOUND
@@ -29,7 +20,4 @@ while(loop){
     }
 }
 
-//Solution goes here
-document.querySelectorAll('span')[0].innerHTML = number;
-
-</script>
+console.log(number);

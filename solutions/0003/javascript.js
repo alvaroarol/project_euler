@@ -1,12 +1,3 @@
-<h2>Problem</h2>
-<p>The prime factors of 13195 are 5, 7, 13 and 29.<br />
-What is the largest prime factor of the number 600851475143 ?</p>
-
-<h2>Answer</h2>
-<span></span>
-
-<script>
-
 var primeList = [];
 var currentNumber = 600851475143;
 
@@ -37,8 +28,4 @@ while(currentNumber > 1){
     }
 }
 
-
-//Solution goes here
-document.querySelectorAll('span')[0].innerHTML = primeList[primeList.length - 1];
-
-</script>
+console.log(primeList[primeList.length - 1]);
